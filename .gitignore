@@ -1,1 +1,4 @@
 *.dat
+*.zip
+*.rar
+datasets/

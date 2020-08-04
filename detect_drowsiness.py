@@ -64,7 +64,7 @@ while True:
 	# grab the frame from the video stream, resize it to have a
 	# maximum width of 400 pixels, and convert it to grayscale
 	frame = vs.read()
-	frame = imutils.resize(frame, width=500)
+	frame = imutils.resize(frame, width=800)
 	frame = cv2.flip(frame, 1)
 	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
