@@ -11,27 +11,37 @@ Download [iBUG](http://dlib.net/files/data/ibug_300W_large_face_landmark_dataset
 
 ## File Structure
 
-- Driver-Drowsiness-Detection-and-Alert-System
-  - alarm.mp3
-  - detect_drowsiness.py
-  - evaluate_error_and_validation.py
-  - eye_predictor.dat
-  - parse_eye.py
-  - train_eye.py
-- datasets
-  - afw
-  - helen
-  - ibug
-  - ifpw
-  - *.xml
+```
+Project
+│
+└───docs/
+|
+└───datasets/
+│   │   afw/
+|   |   helen/
+|   |   ibug/
+|   |   lfpw/
+│   │   *.xml
+|   |
+└───src/
+|   │   alarm.mp3
+|   |   detect_drowsiness.py
+|   |   evaluate_error_and_validation.py
+|   |   parse_eye.py
+|   |   train_eye.py
+|
+└───README.md  
+```
   
-## Build & Run
-  
-### For Training Datasets
+## Parsing Eyes Features and Train these Eyes Features
 
-- `python parse_eye.py`
-- `python train_eye.py`
-  
-### For Detection
-- `python detect_drowsiness.py`
-  
+```bash
+$ ./scripts.sh
+```
+
+## Only for drowsiness detection
+
+```bash
+cd src
+python3 detect_drowsiness.py
+```
