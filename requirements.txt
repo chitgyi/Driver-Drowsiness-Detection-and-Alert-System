@@ -1,6 +1,5 @@
-dlib
-numpy
-playsound
-imutils
-opencv-python
-playsound
+dlib==19.24.0
+numpy==1.23.5
+playsound==1.3.0
+imutils==0.5.4
+opencv-python==4.6.0.66
